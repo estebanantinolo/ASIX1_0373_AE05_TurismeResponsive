@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Turismo en Barcelona - Esteban</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Elemento flotante -->
+  <a href="https://www.barcelonaturisme.com" class="flotante" target="_blank">
+    Turismo BCN
+  </a>
+
+  <main class="layout">
+
+    <!-- COLUMNA 1: MENÚ -->
+    <nav class="menu">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#lugares">Lugares de interés</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#extra">Extra</a></li>
+      </ul>
+    </nav>
+
+    <!-- COLUMNA 2: CONTENIDO PRINCIPAL -->
+    <section class="contenido">
+
+      <!-- GALERÍA -->
+      <section id="galeria" class="bloque">
+        <h2>Galería</h2>
+        <div class="galeria-grid">
+          <img src="./imagenes/imagen1.jpg" alt="">
+          <img src="./imagenes/imagen2.jpg" alt="">
+          <img src="./imagenes/imagen3.jpeg" alt="">
+          <img src="./imagenes/imagen4.jpg" alt="">
+          <img src="./imagenes/imagen5.jpg" alt="">
+          <img src="./imagenes/imagen6.jpg" alt="">
+        </div>
+      </section>
+
+      <!-- LUGARES -->
+      <section id="lugares" class="bloque">
+        <h2>Lugares de interés</h2>
+        <div class="lugares-grid">
+          <article class="lugar">
+            <img src="img/lugares/lugar1.jpg" alt="">
+            <h3>Sagrada Familia</h3>
+            <p>Uno de los monumentos más emblemáticos de la ciudad.</p>
+            <p> Barcelona</p>
+          </article>
+
+          <article class="lugar">
+            <img src="img/lugares/lugar2.jpg" alt="">
+            <h3>Parque Güell</h3>
+            <p>Parque modernista con vistas espectaculares.</p>
+            <p> Barcelona</p>
+          </article>
+
+          <article class="lugar">
+            <img src="img/lugares/lugar3.jpg" alt="">
+            <h3>La Rambla</h3>
+            <p>Paseo más famoso de la ciudad.</p>
+            <p>Barcelona</p>
+          </article>
+
+          <article class="lugar">
+            <img src="img/lugares/lugar4.jpg" alt="">
+            <h3>Barceloneta</h3>
+            <p>Playa urbana muy visitada.</p>
+            <p> Barcelona</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- MAPA -->
+      <section id="mapa" class="bloque">
+        <h2>Mapa de la ciudad</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47890.270060389805!2d2.0989897823186627!3d41.392725093018946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses!2ses!4v1770056255319!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+      </section>
+
+      <!-- EXTRA -->
+      <section id="extra" class="bloque">
+        <h2>Información adicional</h2>
+        <p>Aquí se incluirá el componente de Bootstrap.</p>
+      </section>
+
+    </section>
+
+    <!-- COLUMNA 3: NOTICIAS -->
+    <aside class="noticias">
+      <h2>Últimas noticias</h2>
+
+      <article class="noticia">
+        <img src="img/noticias/noticia1.jpg" alt="">
+        <h3>Evento cultural</h3>
+        <p>Resumen de la noticia...</p>
+        <a href="#" target="_blank">Leer más</a>
+      </article>
+
+      <!-- Repetir hasta 5 -->
+    </aside>
+
+  </main>
+
+</body>
+</html>
