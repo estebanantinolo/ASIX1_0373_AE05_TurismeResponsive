@@ -2,15 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Turismo en Barcelona - Esteban</title>
+  <title>Barcelona - Esteban</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos/estilo.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imagenes/icono.png" type="image/x-icon">
+
 </head>
 
 <body>
 
+  <!-- header -->
+<header class="header">
+  <h1 class="titulo">BARCELONA</h1>
+</header>
+
+
   <!-- elemento arriba derecha -->
-  <a href="https://www.barcelonaturisme.com" class="flotante" target="_blank">
+  <a href="https://www.barcelonaturisme.com" class="flotante">
     Turismo BCN
   </a>
 
@@ -23,7 +32,7 @@
         <li><a href="#galeria">Galería</a></li>
         <li><a href="#lugares">Lugares de interés</a></li>
         <li><a href="#mapa">Mapa</a></li>
-        <li><a href="#extra">Extra</a></li>
+        <li><a href="#imagenes_extra">Imagenes extra</a></li>
       </ul>
     </div>
 
@@ -49,31 +58,27 @@
         <div class="lugares-grid">
 
           <div class="lugar">
-            <img src="img/lugares/lugar1.jpg" alt="">
+            <img src="./imagenes/sagradafamilia.jpg" class="imagen_lugar" alt="">
             <h3>Sagrada Familia</h3>
             <p>Uno de los monumentos más emblemáticos de la ciudad.</p>
-            <p> Barcelona</p>
           </div>
 
           <div class="lugar">
-            <img src="img/lugares/lugar2.jpg" alt="">
+            <img src="./imagenes/parcguell.jpg" class="imagen_lugar" alt="">
             <h3>Parque Güell</h3>
             <p>Parque modernista con vistas espectaculares.</p>
-            <p> Barcelona</p>
           </div>
 
           <div class="lugar">
-            <img src="img/lugares/lugar3.jpg" alt="">
+            <img src="./imagenes/rambla.jpg" class="imagen_lugar" alt="">
             <h3>La Rambla</h3>
             <p>Paseo más famoso de la ciudad.</p>
-            <p>Barcelona</p>
           </div>
 
           <div class="lugar">
-            <img src="img/lugares/lugar4.jpg" alt="">
+            <img src="./imagenes/barceloneta.jpg" class="imagen_lugar" alt="">
             <h3>Barceloneta</h3>
             <p>Playa urbana muy visitada.</p>
-            <p> Barcelona</p>
           </div>
 
         </div>
@@ -88,9 +93,40 @@
       </section>
 
       <!-- bootstrap -->
-      <section id="extra" class="bloque">
-        <h2>Información adicional</h2>
-        <p>poner aqui Bootstrap.</p>
+      <section id="imagenes_extra" class="bloque">
+        <h2>Imagenes extra</h2>
+<div class="bootstrap">
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./imagenes/imagen4.jpg" class="d-block w-100" alt="Imagen de BCN">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagenes/imagen2.jpg" class="d-block w-100" alt="Imagen de BCN">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagenes/imagen3.jpeg" class="d-block w-100" alt="Imagen de BCN">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+
       </section>
 
     </section>
@@ -100,42 +136,43 @@
       <h2>Últimas noticias</h2>
 
       <div class="noticia">
-        <a href="www.google.es">
-          <img src="img/noticias/noticia1.jpg" alt="imagen1">
-          <h3>Evento cultural</h3>
-          <p>Resumen de la noticia...</p>
+        <a href="https://motor.elpais.com/coches-electricos/que-ciudad-tiene-mas-cargadores-para-coches-electricos-madrid-o-barcelona/">
+          <img src="./imagenes/noticias/cargador1.jpg" alt="Imagen de un cargador">
+          <h3>Qué ciudad tiene más cargadores para coches eléctricos, ¿Madrid o Barcelona?</h3>
+          <p>Que los coches eléctricos aumenten su popularidad y sean una opción de compra cada vez más presente para los españoles es algo que depende de varios factores</p>
         </a>
       </div>
 
       <div class="noticia">
-        <a href="www.google.es">
-          <img src="img/noticias/noticia1.jpg" alt="imagen1">
-          <h3>Evento cultural</h3>
-          <p>Resumen de la noticia...</p>
+        <a href="https://cadenaser.com/andalucia/2026/02/02/el-distrito-de-ciudad-jardin-acoge-este-domingo-la-octava-edicion-de-la-carrera-urbana-del-colegio-fundacion-unicaja-sagrada-familia-ser-malaga/">
+          <img src="./imagenes/noticias/cursa2.jpg" alt="Imagen de cartel publicitario de la carrera">
+          <h3>El distrito de Ciudad Jardín acoge este domingo la octava edición de la Carrera Urbana del Colegio Fundación Unicaja Sagrada Familia</h3>
+          <p>La prueba constará de un recorrido de 5 kilómetros para adultos y de 1,5 kilómetros para los más pequeños
+</p>
         </a>
       </div>
 
       <div class="noticia">
-        <a href="www.google.es">
-          <img src="img/noticias/noticia1.jpg" alt="imagen1">
-          <h3>Evento cultural</h3>
-          <p>Resumen de la noticia...</p>
+        <a href="https://www.elle.com/es/belleza/pelo/a38620612/mejores-peluquerias-barcelona/">
+          <img src="./imagenes/noticias/peluqueria3.jfif" alt="Imagen de una peluquería">
+          <h3>Las 15 mejores peluquerías de Barcelona para cortarse el pelo en 2025</h3>
+          <p>Nos vamos de ruta por las peluquerías más top de la ciudad Condal. Desde las más glamurosas hasta las más vanguardistas y rompedoras,</p>
         </a>
       </div>
 
       <div class="noticia">
-        <a href="www.google.es">
-          <img src="img/noticias/noticia1.jpg" alt="imagen1">
-          <h3>Evento cultural</h3>
-          <p>Resumen de la noticia...</p>
+        <a href="https://www.lavanguardia.com/comer/al-dia/20260204/11456751/primeras-patatas-chips-espana-sirvieron-barcelona.html">
+          <img src="./imagenes/noticias/patata4.jpg" alt="Imagen de patatas chips">
+          <h3>Las primeras patatas chips de España se sirvieron en Barcelona</h3>
+          <p>Puede que sea la sencillez y la versatilidad lo que convierte a las patatas chips en un bocado que gusta a todos: nunca se han visto unas manos quietas frente a un bol</p>
         </a>
       </div>
 
       <div class="noticia">
-        <a href="www.google.es">
-          <img src="img/noticias/noticia1.jpg" alt="imagen1">
-          <h3>Evento cultural</h3>
-          <p>Resumen de la noticia...</p>
+        <a href="https://www.timeout.es/barcelona/es/noticias/el-park-guell-celebrara-una-cena-popular-inspirada-en-las-garden-parties-del-siglo-xx-para-celebrar-que-hace-cien-anos-se-convirtio-en-parque-publico-010926">
+          <img src="./imagenes/noticias/parc5.jpg" alt="Imagen del Parc Güell">
+          <h3>El Park Güell organiza una cena popular inspirada en las 'garden parties' del siglo XX para celebrar que hace cien años se convirtió en parque público</h3>
+          <p>La propuesta también forma parte de las actividades dentro del Año Gaudí para conmemorar el centenario de la muerte del arquitecto</p>
         </a>
       </div>
 
@@ -143,5 +180,12 @@
 
   </div>
 
+
+  <footer class="footer">
+    <p class="letra_footer">Esteban Antiñolo - ASIX1 - Turisme responsive</p>
+  </footer>
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
